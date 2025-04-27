@@ -1,108 +1,125 @@
-# My Portfolio
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+# Mon Portfolio
 
-## Features
+Un site portfolio moderne et responsive, construit avec **Next.js**, **TypeScript** et **Tailwind CSS**.
 
-- 🌓 Dark/Light mode
-- 📱 Fully responsive
-- ⚡ Optimized performance
-- 🎨 Modern UI with smooth animations
-- 🔍 SEO optimized
+---
 
-## Prerequisites
+## Fonctionnalités
 
-- Node.js 18+
-- npm or yarn
-- AWS account
+- 🌓 Mode clair/sombre
+- 📱 100% responsive (adapté à tous les écrans)
+- ⚡ Performance optimisée
+- 🎨 Interface moderne avec animations fluides
+- 🔍 SEO optimisé pour un meilleur référencement
 
-## Getting Started
+---
 
-1. Clone the repository:
+## Prérequis
+
+- Node.js 18 ou plus
+- npm ou yarn
+- Compte AWS (pour le déploiement)
+
+---
+
+## Démarrage rapide
+
+1. Cloner le dépôt :  
 ```bash
-git clone https://github.com/yourusername/my-portfolio.git
+git clone https://github.com/MostafaZrour/me.git
 cd my-portfolio
 ```
 
-2. Install dependencies:
+2. Installer les dépendances :  
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. Lancer le serveur de développement :  
 ```bash
 npm run dev
 ```
 
-Visit `http://localhost:3000` to see your portfolio.
+4. Ouvrir dans le navigateur :  
+`http://localhost:3000`
 
-## Deployment to AWS Amplify
+---
 
-1. **Prepare Your Repository**
-   - Ensure your code is pushed to GitHub
-   - Your repository should include:
-     - `next.config.js`
-     - `package.json`
-     - `tsconfig.json`
-     - All source files
+## Déploiement sur AWS Amplify
 
-2. **Set Up AWS Amplify**
-   - Log in to your AWS Console
-   - Go to AWS Amplify
-   - Click "New App" → "Host web app"
-   - Choose GitHub as your repository source
-   - Select your portfolio repository
-   - Choose the main/master branch
+1. **Préparer le dépôt**  
+   - Pousser tout le code sur GitHub  
+   - Vérifier que ces fichiers sont présents :  
+     - `next.config.js`  
+     - `package.json`  
+     - `tsconfig.json`  
+     - Tous les fichiers sources  
 
-3. **Configure Build Settings**
-   - Amplify will automatically detect Next.js
-   - Use this build configuration:
+2. **Configurer AWS Amplify**  
+   - Se connecter à la console AWS  
+   - Aller dans AWS Amplify  
+   - Cliquer sur "New App" → "Host web app"  
+   - Choisir GitHub comme source  
+   - Sélectionner ton dépôt portfolio  
+   - Choisir la branche principale (main/master)  
 
-```yaml
-version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm install
-    build:
-      commands:
-        - npm run build
-  artifacts:
-    baseDirectory: .next
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
-```
+3. **Configurer la construction (build)**  
+   Amplify détecte Next.js automatiquement, utiliser cette config :  
+   ```yaml
+   version: 1
+   frontend:
+     phases:
+       preBuild:
+         commands:
+           - npm install
+       build:
+         commands:
+           - npm run build
+     artifacts:
+       baseDirectory: .next
+       files:
+         - '**/*'
+     cache:
+       paths:
+         - node_modules/**/*
+   ```
 
-4. **Deploy**
-   - Review your settings
-   - Click "Save and deploy"
-   - Amplify will provide a URL like `https://main.xxxxx.amplifyapp.com`
+4. **Déployer**  
+   - Vérifier la configuration  
+   - Cliquer sur "Save and deploy"  
+   - Récupérer l’URL fournie, par exemple :  
+   `https://main.xxxxx.amplifyapp.com`
 
-5. **Custom Domain (Optional)**
-   - In Amplify Console, go to "Domain Management"
-   - Click "Add domain"
-   - Follow the steps to set up your custom domain
-   - AWS will provide SSL/TLS certificate automatically
+5. **Domaine personnalisé (optionnel)**  
+   - Dans Amplify Console, aller à "Domain Management"  
+   - Cliquer sur "Add domain"  
+   - Suivre les instructions pour configurer ton domaine  
+   - Le certificat SSL/TLS est géré automatiquement par AWS  
 
-## Tech Stack
+---
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Lucide Icons](https://lucide.dev/)
+## Technologies utilisées
 
-## Scripts
+- [Next.js](https://nextjs.org/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [shadcn/ui](https://ui.shadcn.com/)  
+- [Lucide Icons](https://lucide.dev/)  
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
+---
 
-## License
+## Commandes utiles
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- `npm run dev` - Démarrer le serveur en mode développement  
+- `npm run build` - Compiler pour la production  
+- `npm start` - Lancer le serveur en production  
+- `npm run lint` - Vérifier le code avec ESLint  
+
+---
+
+## Licence
+
+Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus d’informations.
+
+---

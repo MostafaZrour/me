@@ -607,7 +607,7 @@ export default function Page() {
                   {
                     title: 'Introduction to Cybersecurity',
                     type: 'Professional Certificate',
-                    photo : '/cybersecurity.png',
+                    photo: '/cybersecurity.png',
                     issuer: 'cisco',
                     date: '2023',
                     link: 'https://www.credly.com/badges/69579dfe-4bce-40b6-94e4-8abd2d18b7f6/public_url',

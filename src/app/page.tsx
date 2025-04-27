@@ -177,13 +177,14 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-4 py-12">
           {/* Hero Section */}
           <section id="about" className="mb-24 text-center">
-            <h1 className="text-[42px] font-bold mb-4 gradient-text animate-fade-in">
+            <h1 className="text-[60px] font-bold mb-4 gradient-text animate-fade-in">
               Zrour Mostafa
             </h1>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
-              Passionate developer with a knack for solving complex problems
-              through code. Mostly self-taught and driven by an unyielding
-              curiosity to explore and master new technologies.
+              Développeur passionné, avec un talent pour résoudre des problèmes
+              complexes par le code. Principalement autodidacte, animé par une
+              grande curiosité pour explorer et maîtriser de nouvelles
+              technologies.
             </p>
             <div className="flex items-center justify-center space-x-4">
               <DropdownMenu>
@@ -596,7 +597,7 @@ export default function Page() {
           {/* License & Certifications Section */}
           <section id="certifications" className="animate-fade-in">
             <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
-            Licences et Certifications
+              Licences et Certifications
             </h2>
             <div className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -604,35 +605,50 @@ export default function Page() {
                 {/* Additional certificates are shown based on visibleCertCount */}
                 {[
                   {
-                    title:
-                      'xxxxxxxxxxxxxxx',
+                    title: 'Introduction to Cybersecurity',
                     type: 'Professional Certificate',
-                    issuer: 'Microsoft',
-                    date: '2024',
-                    link: '#',
+                    photo : '/cybersecurity.png',
+                    issuer: 'cisco',
+                    date: '2023',
+                    link: 'https://www.credly.com/badges/69579dfe-4bce-40b6-94e4-8abd2d18b7f6/public_url',
                     providers: [
                       {
-                        name: 'Microsoft',
-                        url: 'https://microsoft.com',
-                        icon: '/microsoft-logo.png',
+                        name: 'cisco',
+                        url: 'https://cisco.com',
+                        icon: '/cisco.svg',
                       },
                     ],
                   },
                   {
-                    title:
-                      'xxxxxxxxxxxxxxx',
+                    title: 'Computer Hardware Basics',
                     type: 'Professional Certificate',
-                    issuer: 'Microsoft',
-                    date: '2024',
-                    link: '#',
+                    photo: '/hardware.png',
+                    issuer: 'Cisco',
+                    date: '2023',
+                    link: 'https://www.credly.com/badges/d739e9f4-1c60-47f0-a3a2-d13fe35794da/public_url',
                     providers: [
                       {
-                        name: 'Microsoft',
-                        url: 'https://microsoft.com',
-                        icon: '/microsoft-logo.png',
+                        name: 'cisco',
+                        url: 'https://cisco.com',
+                        icon: '/cisco.svg',
                       },
                     ],
-                  }
+                  },
+                  {
+                    title: 'Python Essentials 1',
+                    type: 'Professional Certificate',
+                    photo: '/python.png',
+                    issuer: 'Cisco',
+                    date: '2023',
+                    link: 'https://www.credly.com/badges/2a5b1e5a-908e-45f2-b53b-d9a0854af3d3/public_url',
+                    providers: [
+                      {
+                        name: 'cisco',
+                        url: 'https://cisco.com',
+                        icon: '/cisco.svg',
+                      },
+                    ],
+                  },
                 ]
                   .slice(0, visibleCertCount)
                   .map((cert, index) => (
@@ -643,9 +659,18 @@ export default function Page() {
                       } flex flex-col`}
                     >
                       <div>
-                        <h3 className="text-xl font-bold mb-3 text-foreground">
-                          {cert.title}
-                        </h3>
+                        <div className="flex items-center gap-2 mb-3">
+                          <Image
+                            src={cert.photo}
+                            alt="Logo"
+                            width={24}
+                            height={24}
+                            className="w-6 h-6 object-contain"
+                          />
+                          <h3 className="text-xl font-bold text-foreground">
+                            {cert.title}
+                          </h3>
+                        </div>
                         <div className="flex items-center gap-2 mb-2">
                           <p className="text-muted-foreground text-[0.6em]">
                             {cert.type}

@@ -557,7 +557,7 @@ export default function Page() {
                         className="cursor-pointer transition-opacity hover:opacity-80"
                       >
                         <Image
-                          src="/ofppt-logo.png"
+                          src="./ofppt-logo.png"
                           alt="OFPPT Logo"
                           width={48}
                           height={48}

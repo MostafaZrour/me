@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Mail, MessageSquare, Github, Download } from 'lucide-react';
-import { Navbar } from '@/components/navbar';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Mail, MessageSquare, Github, Download } from "lucide-react";
+import { Navbar } from "@/components/navbar";
 import {
   Card,
   CardHeader,
@@ -11,7 +11,7 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from '@/components/ui/card';
+} from "@/components/ui/card";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,11 +20,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { ArrowRight as ArrowRightIcon } from 'lucide-react';
-import Image from 'next/image';
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
-import { ThemeSparkles } from '@/components/ui/ThemeSparkles';
+} from "@/components/ui/dropdown-menu";
+import { ArrowRight as ArrowRightIcon } from "lucide-react";
+import Image from "next/image";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ThemeSparkles } from "@/components/ui/ThemeSparkles";
 
 export default function Page() {
   const [showMoreCerts, setShowMoreCerts] = useState(false);
@@ -33,102 +33,121 @@ export default function Page() {
 
   const projects = [
     {
-      title: 'Boutique en ligne',
-      description: 'Boutique en ligne moderne de vêtements et accessoires',
+      title: "Boutique en ligne",
+      description: "Boutique en ligne moderne de vêtements et accessoires",
       content:
-        'Découvrez nos collections été et hiver, profitez de promotions incroyables, livraison gratuite, assistance 24/7, et économisez jusqu’à 70% sur vos articles préférés.',
-      link: 'https://mostafazrour.github.io/Bootstrap-Ecommerce/',
+        "Découvrez nos collections été et hiver, profitez de promotions incroyables, livraison gratuite, assistance 24/7, et économisez jusqu’à 70% sur vos articles préférés.",
+      link: "https://mostafazrour.github.io/Bootstrap-Ecommerce/",
       technologies: [
-        { name: 'HTML', icon: './icons/html-5-svgrepo-com.svg' },
-        { name: 'Bootstrap', icon: './icons/bootstrap-fill-svgrepo-com.svg' },
-        { name: 'JavaScript', icon: './icons/javascript-svgrepo-com.svg' },
-        { name: 'Prettier', icon: './icons/prettier-svgrepo-com.svg' },
-        { name: 'Bash', icon: './icons/bash-icon-svgrepo-com.svg' },
-        { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-        { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
+        { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+        { name: "Bootstrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
+        { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
       ],
     },
     {
-      title: 'Portfolio WebSite',
-      description: 'Portfolio moderne construit avec React.js et Tailwind CSS',
+      title: "Portfolio WebSite",
+      description: "Portfolio moderne construit avec React.js et Tailwind CSS",
       content:
-        'Un portfolio réactif et animé présentant mes projets et compétences',
-      link: 'https://github.com/MostafaZrour/portfolio',
+        "Un portfolio réactif et animé présentant mes projets et compétences",
+      link: "https://github.com/MostafaZrour/portfolio",
       technologies: [
-        { name: 'React', icon: './icons/react-svgrepo-com.svg' },
-        { name: 'Next.js', icon: './icons/nextjs-icon-svgrepo-com.svg' },
-        { name: 'TypeScript', icon: './icons/typescript-svgrepo-com.svg' },
-        { name: 'Tailwind', icon: './icons/tailwind-svgrepo-com.svg' },
-        { name: 'NPM', icon: './icons/npm.svg' },
-        { name: 'Prettier', icon: './icons/prettier-svgrepo-com.svg' },
-        { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-        { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
+        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+        { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
+        { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
+        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+        { name: "NPM", icon: "/icons/npm.svg" },
+        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
       ],
     },
     {
-      title: 'Système de Réservation d’Hôtel',
+      title: "Système de Réservation d’Hôtel",
       description:
-        'Application de gestion des réservations d’hôtel avec gestion des clients, chambres et utilisateurs',
+        "Application de gestion des réservations d’hôtel avec gestion des clients, chambres et utilisateurs",
       content:
-        'Un système complet permettant de gérer les clients, les chambres, les réservations, les tarifs et les utilisateurs, avec une base de données relationnelle optimisée.',
-      link: 'https://github.com/MostafaZrour/hotel-management',
+        "Un système complet permettant de gérer les clients, les chambres, les réservations, les tarifs et les utilisateurs, avec une base de données relationnelle optimisée.",
+      link: "https://github.com/MostafaZrour/hotel-management",
       technologies: [
-        { name: 'php', icon: './icons/php-1-logo-svgrepo-com.svg' },
-        { name: 'bootstrap', icon: './icons/bootstrap-fill-svgrepo-com.svg' },
-        { name: 'JavaScript', icon: './icons/javascript-svgrepo-com.svg' },
-        { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-        { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
+        { name: "php", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+        { name: "bootstrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
       ],
     },
     {
-      title: 'ytmusic Downloader',
+      title: "AI Course Recommendation",
       description:
-        'Python script for downloading music from YTmusic using the yt-dlp library',
-      content: 'A simple Python script to download audio from YouTube videos',
-      link: 'https://github.com/MostafaZrour/yt-music-downloader',
+        "Application intelligente de recommandation de cours basée sur l’Intelligence Artificielle",
+      content:
+        "Plateforme web qui analyse le profil de l’utilisateur (niveau, intérêts, historique) afin de proposer automatiquement les meilleurs cours à suivre.",
+      link: "https://github.com/MostafaZrour/ai-course-recommendation",
       technologies: [
-        { name: 'Python', icon: './icons/python-svgrepo-com.svg' },
-        { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-        { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
+        { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+        { name: "Redux-toolKit", icon: "/icons/redux-svgrepo-com.svg" },
+        { name: "MySQL", icon: "/icons/mysql-logo-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
       ],
     },
     {
-      title: 'PHP CRUD MVC ',
+      title: "PHP CRUD MVC ",
       description:
-        'Projet simple en PHP MVC pour créer, lire, modifier et supprimer des utilisateurs avec une architecture claire',
+        "Projet simple en PHP MVC pour créer, lire, modifier et supprimer des utilisateurs avec une architecture claire",
       content:
-        'Une application CRUD complète utilisant le modèle MVC, permettant de gérer efficacement les données utilisateurs avec PHP et MySQL.',
-      link: 'https://github.com/fernand3z/my-webview-app',
+        "Une application CRUD complète utilisant le modèle MVC, permettant de gérer efficacement les données utilisateurs avec PHP et MySQL.",
+      link: "https://github.com/fernand3z/my-webview-app",
       technologies: [
-        { name: 'php', icon: './icons/php-1-logo-svgrepo-com.svg' },
-        { name: 'bootsrap', icon: './icons/bootstrap-fill-svgrepo-com.svg' },
-        { name: 'JavaScript', icon: './icons/javascript-svgrepo-com.svg' },
-        { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-        { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
+        { name: "php", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+        { name: "bootsrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
       ],
     },
     {
-      title: 'Coming Soon',
-      description: 'Future project planned',
+      title: "Laravel Medium Clone",
+      description: "Un projet clone de Medium, développé avec Laravel",
       content:
-        'Another exciting project in the pipeline. Stay tuned for updates!',
-      status: 'In Planning',
+        "Les utilisateurs peuvent publier des articles, ajouter des images, et interagir. Fonctionnalités: authentification, création/édition/suppression d'articles, upload d'images avec Spatie Media Library, affichage avec pagination, et interactions entre utilisateurs.",
+      link: "https://github.com/MostafaZrour/Laravel-Medium-Clone",
+      technologies: [
+        { name: "Laravel", icon: "/icons/laravel-1-logo-svgrepo-com.svg" },
+        { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+        { name: "MySQL", icon: "/icons/mysql-logo-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+      ],
+    },
+    {
+      title: "Coming Soon",
+      description: "Future project planned",
+      content:
+        "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning",
       technologies: [],
     },
     {
-      title: 'Coming Soon',
-      description: 'Future project planned',
+      title: "Coming Soon",
+      description: "Future project planned",
       content:
-        'Another exciting project in the pipeline. Stay tuned for updates!',
-      status: 'In Planning',
+        "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning",
       technologies: [],
     },
     {
-      title: 'Coming Soon',
-      description: 'Future project planned',
+      title: "Coming Soon",
+      description: "Future project planned",
       content:
-        'Another exciting project in the pipeline. Stay tuned for updates!',
-      status: 'In Planning',
+        "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning",
       technologies: [],
     },
   ];
@@ -156,15 +175,14 @@ export default function Page() {
 
   const handleContact = (platform: string) => {
     switch (platform) {
-      case 'gmail':
-        window.location.href = 'mailto:moustazro123@gmail.com';
+      case "gmail":
+        window.location.href = "mailto:moustazro123@gmail.com";
         break;
-      case 'whatsapp':
-        window.location.href = 'https://wa.me/+212682879516';
+      case "whatsapp":
+        window.location.href = "https://wa.me/+212682879516";
         break;
-      case 'linkedin':
-        window.location.href =
-          'https://www.linkedin.com/in/mostafa-zrour-342337349/';
+      case "linkedin":
+        window.location.href = "https://www.linkedin.com/in/mostafazrour/";
         break;
     }
   };
@@ -200,15 +218,15 @@ export default function Page() {
                   <DropdownMenuLabel>Get in touch</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
-                    <DropdownMenuItem onClick={() => handleContact('gmail')}>
+                    <DropdownMenuItem onClick={() => handleContact("gmail")}>
                       <Mail className="mr-2 h-4 w-4" />
                       <span>Email</span>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={() => handleContact('whatsapp')}>
+                    <DropdownMenuItem onClick={() => handleContact("whatsapp")}>
                       <MessageSquare className="mr-2 h-4 w-4" />
                       <span>WhatsApp</span>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={() => handleContact('linkedin')}>
+                    <DropdownMenuItem onClick={() => handleContact("linkedin")}>
                       <Github className="mr-2 h-4 w-4" />
                       <span>LinkedIn</span>
                     </DropdownMenuItem>
@@ -243,17 +261,17 @@ export default function Page() {
                 <div className="animate-slide-in delay-100">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: 'HTML', icon: './icons/html-5-svgrepo-com.svg' },
-                      { name: 'CSS', icon: './icons/css-svgrepo-com.svg' },
+                      { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+                      { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
                       {
-                        name: 'JavaScript',
-                        icon: './icons/javascript-svgrepo-com.svg',
+                        name: "JavaScript",
+                        icon: "/icons/javascript-svgrepo-com.svg",
                       },
                       {
-                        name: 'TypeScript',
-                        icon: './icons/typescript-svgrepo-com.svg',
+                        name: "TypeScript",
+                        icon: "/icons/typescript-svgrepo-com.svg",
                       },
-                      { name: 'Python', icon: './icons/python-svgrepo-com.svg' },
+                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
                         <div key={index} className="flex items-center gap-2">
@@ -268,7 +286,7 @@ export default function Page() {
                             {tech.name}
                           </span>
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -277,19 +295,19 @@ export default function Page() {
                 <div className="animate-slide-in delay-200">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: 'React', icon: './icons/react-svgrepo-com.svg' },
+                      { name: "React", icon: "/icons/react-svgrepo-com.svg" },
                       {
-                        name: 'BOOTSTRAP',
-                        icon: './icons/bootstrap-fill-svgrepo-com.svg',
+                        name: "BOOTSTRAP",
+                        icon: "/icons/bootstrap-fill-svgrepo-com.svg",
                       },
                       {
-                        name: 'Tailwind',
-                        icon: './icons/tailwind-svgrepo-com.svg',
+                        name: "Tailwind",
+                        icon: "/icons/tailwind-svgrepo-com.svg",
                       },
-                      { name: 'NPM', icon: './icons/npm-svgrepo-com.svg' },
+                      { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
                       {
-                        name: 'WordPress',
-                        icon: './icons/wordpress-color-svgrepo-com.svg',
+                        name: "WordPress",
+                        icon: "/icons/wordpress-color-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -305,7 +323,7 @@ export default function Page() {
                             {tech.name}
                           </span>
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -315,20 +333,20 @@ export default function Page() {
                   <div className="space-y-2 md:space-y-4">
                     {[
                       {
-                        name: 'LARAVEL',
-                        icon: './icons/laravel-1-logo-svgrepo-com.svg',
+                        name: "LARAVEL",
+                        icon: "/icons/laravel-1-logo-svgrepo-com.svg",
                       },
                       {
-                        name: 'PHP',
-                        icon: './icons/php-1-logo-svgrepo-com.svg',
+                        name: "PHP",
+                        icon: "/icons/php-1-logo-svgrepo-com.svg",
                       },
                       {
-                        name: 'MongoDB',
-                        icon: './icons/mongodb-svgrepo-com.svg',
+                        name: "MongoDB",
+                        icon: "/icons/mongodb-svgrepo-com.svg",
                       },
                       {
-                        name: 'MYSQL',
-                        icon: './icons/mysql-logo-svgrepo-com.svg',
+                        name: "MYSQL",
+                        icon: "/icons/mysql-logo-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -344,7 +362,7 @@ export default function Page() {
                             {tech.name}
                           </span>
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -353,12 +371,12 @@ export default function Page() {
                 <div className="animate-slide-in delay-400">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: 'Git', icon: './icons/git-svgrepo-com.svg' },
-                      { name: 'GitHub', icon: './icons/github-svgrepo-com.svg' },
-                      { name: 'GitLab', icon: './icons/gitlab-svgrepo-com.svg' },
+                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+                      { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
                       {
-                        name: 'Docker',
-                        icon: './icons/docker-svgrepo-com(1).svg',
+                        name: "Docker",
+                        icon: "/icons/docker-svgrepo-com(1).svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -374,7 +392,7 @@ export default function Page() {
                             {tech.name}
                           </span>
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -383,20 +401,20 @@ export default function Page() {
                   <div className="space-y-2 md:space-y-4">
                     {[
                       {
-                        name: 'VS Code',
-                        icon: './icons/vscode-svgrepo-com.svg',
+                        name: "VS Code",
+                        icon: "/icons/vscode-svgrepo-com.svg",
                       },
                       {
-                        name: 'Terminal',
-                        icon: './icons/terminal-svgrepo-com.svg',
+                        name: "Terminal",
+                        icon: "/icons/terminal-svgrepo-com.svg",
                       },
                       {
-                        name: 'PowerShell',
-                        icon: './icons/powershell-svgrepo-com.svg',
+                        name: "PowerShell",
+                        icon: "/icons/powershell-svgrepo-com.svg",
                       },
                       {
-                        name: 'Bash',
-                        icon: './icons/bash-icon-svgrepo-com.svg',
+                        name: "Bash",
+                        icon: "/icons/bash-icon-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -412,7 +430,7 @@ export default function Page() {
                             {tech.name}
                           </span>
                         </div>
-                      )
+                      ),
                     )}
                   </div>
                 </div>
@@ -433,7 +451,7 @@ export default function Page() {
                     <Card
                       key={index}
                       className={`hover-lift flex flex-col ${
-                        !project.link ? 'opacity-75' : ''
+                        !project.link ? "opacity-75" : ""
                       }`}
                     >
                       <CardHeader>
@@ -477,11 +495,11 @@ export default function Page() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                View on GitHub{' '}
+                                View on GitHub{" "}
                                 <ArrowRightIcon className="ml-2 h-4 w-4" />
                               </a>
                             </Button>
-                            {project.title === 'Devlogz Blog App' && (
+                            {project.title === "Devlogz Blog App" && (
                               <Button
                                 asChild
                                 variant="outline"
@@ -545,7 +563,7 @@ export default function Page() {
               Formation et apprentissage
             </h2>
             <div className="space-y-6">
-              {/* ofppt */}
+              {/* OFPPT */}
               <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
@@ -557,7 +575,7 @@ export default function Page() {
                         className="cursor-pointer transition-opacity hover:opacity-80"
                       >
                         <Image
-                          src="./ofppt-logo.png"
+                          src="/ofppt-logo.png"
                           alt="OFPPT Logo"
                           width={48}
                           height={48}
@@ -565,6 +583,7 @@ export default function Page() {
                         />
                       </a>
                     </div>
+
                     <div>
                       <a
                         href="https://www.ofppt.ma"
@@ -576,6 +595,7 @@ export default function Page() {
                           Stagiaire en Développement Digital
                         </CardTitle>
                       </a>
+
                       <CardDescription>
                         <span className="block text-muted-foreground">
                           OFPPT Ouled Teima
@@ -584,7 +604,56 @@ export default function Page() {
                           2023 - 2025
                         </span>
                         <span className="inline-flex items-center px-2.5 py-0.5 mt-2 rounded-full text-xs font-medium bg-success/10 text-success">
-                          En cours
+                          Terminé
+                        </span>
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+              </Card>
+
+              {/* ESTSB */}
+              <Card className="hover-lift">
+                <CardHeader className="pb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
+                      <a
+                        href="https://www.estsb.ac.ma"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer transition-opacity hover:opacity-80"
+                      >
+                        <Image
+                          src="/estsblogo.png"
+                          alt="ESTSB Logo"
+                          width={48}
+                          height={48}
+                          className="w-full h-full object-contain p-1"
+                        />
+                      </a>
+                    </div>
+
+                    <div>
+                      <a
+                        href="https://www.estsb.ac.ma"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        <CardTitle>
+                          Étudiant en Ingénierie des Systèmes Informatiques
+                        </CardTitle>
+                      </a>
+
+                      <CardDescription>
+                        <span className="block text-muted-foreground">
+                          ESTSB Agadir
+                        </span>
+                        <span className="block text-sm text-muted-foreground/60">
+                          2025 - 2026
+                        </span>
+                        <span className="inline-flex items-center px-2.5 py-0.5 mt-2 rounded-full text-xs font-medium bg-success/10 text-success">
+                          Actuel
                         </span>
                       </CardDescription>
                     </div>
@@ -605,47 +674,47 @@ export default function Page() {
                 {/* Additional certificates are shown based on visibleCertCount */}
                 {[
                   {
-                    title: 'Introduction to Cybersecurity',
-                    type: 'Professional Certificate',
-                    photo: './cybersecurity.png',
-                    issuer: 'cisco',
-                    date: '2023',
-                    link: 'https://www.credly.com/badges/69579dfe-4bce-40b6-94e4-8abd2d18b7f6/public_url',
+                    title: "Introduction to Cybersecurity",
+                    type: "Professional Certificate",
+                    photo: "/cybersecurity.png",
+                    issuer: "cisco",
+                    date: "2023",
+                    link: "https://www.credly.com/badges/69579dfe-4bce-40b6-94e4-8abd2d18b7f6/public_url",
                     providers: [
                       {
-                        name: 'cisco',
-                        url: 'https://cisco.com',
-                        icon: './cisco.svg',
+                        name: "cisco",
+                        url: "https://cisco.com",
+                        icon: "/cisco.svg",
                       },
                     ],
                   },
                   {
-                    title: 'Computer Hardware Basics',
-                    type: 'Professional Certificate',
-                    photo: './hardware.png',
-                    issuer: 'Cisco',
-                    date: '2023',
-                    link: 'https://www.credly.com/badges/d739e9f4-1c60-47f0-a3a2-d13fe35794da/public_url',
+                    title: "Computer Hardware Basics",
+                    type: "Professional Certificate",
+                    photo: "/hardware.png",
+                    issuer: "Cisco",
+                    date: "2023",
+                    link: "https://www.credly.com/badges/d739e9f4-1c60-47f0-a3a2-d13fe35794da/public_url",
                     providers: [
                       {
-                        name: 'cisco',
-                        url: 'https://cisco.com',
-                        icon: './cisco.svg',
+                        name: "cisco",
+                        url: "https://cisco.com",
+                        icon: "/cisco.svg",
                       },
                     ],
                   },
                   {
-                    title: 'Python Essentials 1',
-                    type: 'Professional Certificate',
-                    photo: './python.png',
-                    issuer: 'Cisco',
-                    date: '2023',
-                    link: 'https://www.credly.com/badges/2a5b1e5a-908e-45f2-b53b-d9a0854af3d3/public_url',
+                    title: "Python Essentials 1",
+                    type: "Professional Certificate",
+                    photo: "/python.png",
+                    issuer: "Cisco",
+                    date: "2023",
+                    link: "https://www.credly.com/badges/2a5b1e5a-908e-45f2-b53b-d9a0854af3d3/public_url",
                     providers: [
                       {
-                        name: 'cisco',
-                        url: 'https://cisco.com',
-                        icon: './cisco.svg',
+                        name: "cisco",
+                        url: "https://cisco.com",
+                        icon: "/cisco.svg",
                       },
                     ],
                   },

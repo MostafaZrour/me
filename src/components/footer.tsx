@@ -16,7 +16,7 @@ export function Footer() {
           {/* Contact Info - Left Side */}
           <div className="flex flex-col space-y-2">
             <a
-              href="https://wa.me/447479460160"
+              href="https://wa.me/+212682879516"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors group"
@@ -73,7 +73,7 @@ export function Footer() {
               asChild
             >
               <a
-                href="https://www.linkedin.com/in/mostafa-zrour-342337349/"
+                href="https://www.linkedin.com/in/mostafazrour/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

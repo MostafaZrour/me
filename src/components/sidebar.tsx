@@ -101,7 +101,7 @@ export function Sidebar({
               asChild
             >
               <a
-                href="https://www.linkedin.com/in/mostafa-zrour-342337349/"
+                href="https://www.linkedin.com/in/mostafazrour/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

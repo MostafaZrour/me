@@ -39,13 +39,13 @@ export default function Page() {
         "Découvrez nos collections été et hiver, profitez de promotions incroyables, livraison gratuite, assistance 24/7, et économisez jusqu’à 70% sur vos articles préférés.",
       link: "https://mostafazrour.github.io/Bootstrap-Ecommerce/",
       technologies: [
-        { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
-        { name: "Bootstrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
-        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
-        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
-        { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "HTML", icon: "./icons/html-5-svgrepo-com.svg" },
+        { name: "Bootstrap", icon: "./icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "./icons/javascript-svgrepo-com.svg" },
+        { name: "Prettier", icon: "./icons/prettier-svgrepo-com.svg" },
+        { name: "Bash", icon: "./icons/bash-icon-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -55,14 +55,14 @@ export default function Page() {
         "Un portfolio réactif et animé présentant mes projets et compétences",
       link: "https://github.com/MostafaZrour/portfolio",
       technologies: [
-        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
-        { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
-        { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
-        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-        { name: "NPM", icon: "/icons/npm.svg" },
-        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "React", icon: "./icons/react-svgrepo-com.svg" },
+        { name: "Next.js", icon: "./icons/nextjs-icon-svgrepo-com.svg" },
+        { name: "TypeScript", icon: "./icons/typescript-svgrepo-com.svg" },
+        { name: "Tailwind", icon: "./icons/tailwind-svgrepo-com.svg" },
+        { name: "NPM", icon: "./icons/npm.svg" },
+        { name: "Prettier", icon: "./icons/prettier-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -73,11 +73,11 @@ export default function Page() {
         "Un système complet permettant de gérer les clients, les chambres, les réservations, les tarifs et les utilisateurs, avec une base de données relationnelle optimisée.",
       link: "https://github.com/MostafaZrour/hotel-management",
       technologies: [
-        { name: "php", icon: "/icons/php-1-logo-svgrepo-com.svg" },
-        { name: "bootstrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
-        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "php", icon: "./icons/php-1-logo-svgrepo-com.svg" },
+        { name: "bootstrap", icon: "./icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "./icons/javascript-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -88,12 +88,12 @@ export default function Page() {
         "Plateforme web qui analyse le profil de l’utilisateur (niveau, intérêts, historique) afin de proposer automatiquement les meilleurs cours à suivre.",
       link: "https://github.com/MostafaZrour/ai-course-recommendation",
       technologies: [
-        { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
-        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
-        { name: "Redux-toolKit", icon: "/icons/redux-svgrepo-com.svg" },
-        { name: "MySQL", icon: "/icons/mysql-logo-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "Python", icon: "./icons/python-svgrepo-com.svg" },
+        { name: "React", icon: "./icons/react-svgrepo-com.svg" },
+        { name: "Redux-toolKit", icon: "./icons/redux-svgrepo-com.svg" },
+        { name: "MySQL", icon: "./icons/mysql-logo-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -104,11 +104,11 @@ export default function Page() {
         "Une application CRUD complète utilisant le modèle MVC, permettant de gérer efficacement les données utilisateurs avec PHP et MySQL.",
       link: "https://github.com/fernand3z/my-webview-app",
       technologies: [
-        { name: "php", icon: "/icons/php-1-logo-svgrepo-com.svg" },
-        { name: "bootsrap", icon: "/icons/bootstrap-fill-svgrepo-com.svg" },
-        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "php", icon: "./icons/php-1-logo-svgrepo-com.svg" },
+        { name: "bootsrap", icon: "./icons/bootstrap-fill-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "./icons/javascript-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -118,12 +118,12 @@ export default function Page() {
         "Les utilisateurs peuvent publier des articles, ajouter des images, et interagir. Fonctionnalités: authentification, création/édition/suppression d'articles, upload d'images avec Spatie Media Library, affichage avec pagination, et interactions entre utilisateurs.",
       link: "https://github.com/MostafaZrour/Laravel-Medium-Clone",
       technologies: [
-        { name: "Laravel", icon: "/icons/laravel-1-logo-svgrepo-com.svg" },
-        { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
-        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-        { name: "MySQL", icon: "/icons/mysql-logo-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+        { name: "Laravel", icon: "./icons/laravel-1-logo-svgrepo-com.svg" },
+        { name: "PHP", icon: "./icons/php-1-logo-svgrepo-com.svg" },
+        { name: "Tailwind", icon: "./icons/tailwind-svgrepo-com.svg" },
+        { name: "MySQL", icon: "./icons/mysql-logo-svgrepo-com.svg" },
+        { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
       ],
     },
     {
@@ -261,17 +261,17 @@ export default function Page() {
                 <div className="animate-slide-in delay-100">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
-                      { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
+                      { name: "HTML", icon: "./icons/html-5-svgrepo-com.svg" },
+                      { name: "CSS", icon: "./icons/css-svgrepo-com.svg" },
                       {
                         name: "JavaScript",
-                        icon: "/icons/javascript-svgrepo-com.svg",
+                        icon: "./icons/javascript-svgrepo-com.svg",
                       },
                       {
                         name: "TypeScript",
-                        icon: "/icons/typescript-svgrepo-com.svg",
+                        icon: "./icons/typescript-svgrepo-com.svg",
                       },
-                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+                      { name: "Python", icon: "./icons/python-svgrepo-com.svg" },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
                         <div key={index} className="flex items-center gap-2">
@@ -295,19 +295,19 @@ export default function Page() {
                 <div className="animate-slide-in delay-200">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+                      { name: "React", icon: "./icons/react-svgrepo-com.svg" },
                       {
                         name: "BOOTSTRAP",
-                        icon: "/icons/bootstrap-fill-svgrepo-com.svg",
+                        icon: "./icons/bootstrap-fill-svgrepo-com.svg",
                       },
                       {
                         name: "Tailwind",
-                        icon: "/icons/tailwind-svgrepo-com.svg",
+                        icon: "./icons/tailwind-svgrepo-com.svg",
                       },
-                      { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
+                      { name: "NPM", icon: "./icons/npm-svgrepo-com.svg" },
                       {
                         name: "WordPress",
-                        icon: "/icons/wordpress-color-svgrepo-com.svg",
+                        icon: "./icons/wordpress-color-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -334,19 +334,19 @@ export default function Page() {
                     {[
                       {
                         name: "LARAVEL",
-                        icon: "/icons/laravel-1-logo-svgrepo-com.svg",
+                        icon: "./icons/laravel-1-logo-svgrepo-com.svg",
                       },
                       {
                         name: "PHP",
-                        icon: "/icons/php-1-logo-svgrepo-com.svg",
+                        icon: "./icons/php-1-logo-svgrepo-com.svg",
                       },
                       {
                         name: "MongoDB",
-                        icon: "/icons/mongodb-svgrepo-com.svg",
+                        icon: "./icons/mongodb-svgrepo-com.svg",
                       },
                       {
                         name: "MYSQL",
-                        icon: "/icons/mysql-logo-svgrepo-com.svg",
+                        icon: "./icons/mysql-logo-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -371,12 +371,12 @@ export default function Page() {
                 <div className="animate-slide-in delay-400">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
-                      { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
+                      { name: "Git", icon: "./icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "./icons/github-svgrepo-com.svg" },
+                      { name: "GitLab", icon: "./icons/gitlab-svgrepo-com.svg" },
                       {
                         name: "Docker",
-                        icon: "/icons/docker-svgrepo-com(1).svg",
+                        icon: "./icons/docker-svgrepo-com(1).svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -402,19 +402,19 @@ export default function Page() {
                     {[
                       {
                         name: "VS Code",
-                        icon: "/icons/vscode-svgrepo-com.svg",
+                        icon: "./icons/vscode-svgrepo-com.svg",
                       },
                       {
                         name: "Terminal",
-                        icon: "/icons/terminal-svgrepo-com.svg",
+                        icon: "./icons/terminal-svgrepo-com.svg",
                       },
                       {
                         name: "PowerShell",
-                        icon: "/icons/powershell-svgrepo-com.svg",
+                        icon: "./icons/powershell-svgrepo-com.svg",
                       },
                       {
                         name: "Bash",
-                        icon: "/icons/bash-icon-svgrepo-com.svg",
+                        icon: "./icons/bash-icon-svgrepo-com.svg",
                       },
                     ].map(
                       (tech: { name: string; icon: string }, index: number) => (
@@ -575,7 +575,7 @@ export default function Page() {
                         className="cursor-pointer transition-opacity hover:opacity-80"
                       >
                         <Image
-                          src="/ofppt-logo.png"
+                          src="./ofppt-logo.png"
                           alt="OFPPT Logo"
                           width={48}
                           height={48}
@@ -624,7 +624,7 @@ export default function Page() {
                         className="cursor-pointer transition-opacity hover:opacity-80"
                       >
                         <Image
-                          src="/estsblogo.png"
+                          src="./estsblogo.png"
                           alt="ESTSB Logo"
                           width={48}
                           height={48}
@@ -676,7 +676,7 @@ export default function Page() {
                   {
                     title: "Introduction to Cybersecurity",
                     type: "Professional Certificate",
-                    photo: "/cybersecurity.png",
+                    photo: "./cybersecurity.png",
                     issuer: "cisco",
                     date: "2023",
                     link: "https://www.credly.com/badges/69579dfe-4bce-40b6-94e4-8abd2d18b7f6/public_url",
@@ -684,14 +684,14 @@ export default function Page() {
                       {
                         name: "cisco",
                         url: "https://cisco.com",
-                        icon: "/cisco.svg",
+                        icon: "./cisco.svg",
                       },
                     ],
                   },
                   {
                     title: "Computer Hardware Basics",
                     type: "Professional Certificate",
-                    photo: "/hardware.png",
+                    photo: "./hardware.png",
                     issuer: "Cisco",
                     date: "2023",
                     link: "https://www.credly.com/badges/d739e9f4-1c60-47f0-a3a2-d13fe35794da/public_url",
@@ -699,14 +699,14 @@ export default function Page() {
                       {
                         name: "cisco",
                         url: "https://cisco.com",
-                        icon: "/cisco.svg",
+                        icon: "./cisco.svg",
                       },
                     ],
                   },
                   {
                     title: "Python Essentials 1",
                     type: "Professional Certificate",
-                    photo: "/python.png",
+                    photo: "./python.png",
                     issuer: "Cisco",
                     date: "2023",
                     link: "https://www.credly.com/badges/2a5b1e5a-908e-45f2-b53b-d9a0854af3d3/public_url",
@@ -714,7 +714,7 @@ export default function Page() {
                       {
                         name: "cisco",
                         url: "https://cisco.com",
-                        icon: "/cisco.svg",
+                        icon: "./cisco.svg",
                       },
                     ],
                   },

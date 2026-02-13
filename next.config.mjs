@@ -2,8 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/me' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/me' : '',
   images: {
-    unoptimized: false,
+    unoptimized: true,
     formats: ['image/webp'],
     remotePatterns: [
       {
